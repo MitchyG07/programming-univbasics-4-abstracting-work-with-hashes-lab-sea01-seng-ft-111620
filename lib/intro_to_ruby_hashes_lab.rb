@@ -6,8 +6,8 @@ end
 
 def read_from_hash(hash, key)
   new_hash = hash
+  puts new_hash
   value = new_hash[:key]
-  puts value 
 end
 
 def update_counting_hash(hash, key)
@@ -16,4 +16,4 @@ def update_counting_hash(hash, key)
   # if the provided key is present, increment its value by 1
 end
 
-read_from_hash({:name => "Mitch"}, name)
+read_from_hash({:name => "Mitch"}, :name)
