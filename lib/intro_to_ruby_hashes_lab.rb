@@ -13,10 +13,10 @@ end
 
 def update_counting_hash(hash, key)
   hash_to_change = hash
-  if key = nil
-    hash_to_change[key] = 1 
-  else 
+  if hash_to_change[key]
     hash_to_change[key] += 1 
+  else 
+    hash_to_change[key] = 1 
   end 
   
   puts hash_to_change 
